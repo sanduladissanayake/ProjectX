@@ -4,6 +4,8 @@ import { AuthProvider } from './context/AuthContext';
 import { Navigation } from './components/layout/Navigation';
 
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
+import { EventList } from './components/events/EventList';
+import { EventDetails } from './components/events/EventDetails';
 
 // Pages
 import { HomePage } from './pages/HomePage';
@@ -29,7 +31,9 @@ const App: React.FC = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               
-              
+              {/* Events Routes */}
+              <Route path="/events" element={<EventList />} />
+              <Route path="/events/:id" element={<EventDetails />} />
             
               
               {/* Protected Admin Routes */}
