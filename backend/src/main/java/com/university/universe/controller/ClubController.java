@@ -1,7 +1,5 @@
 package com.university.universe.controller;
 
-import com.university.universe.model.Club;
-import com.university.universe.service.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
